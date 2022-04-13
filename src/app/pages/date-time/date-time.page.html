@@ -1,0 +1,23 @@
+<app-header title="Date Time"></app-header>
+
+<ion-content>
+
+    <ion-list>
+        <ion-list-header>
+            <ion-label>Date picker test</ion-label>
+        </ion-list-header>
+        <ion-item (click)="updateVisibility()">
+            <ion-label>Selected Date</ion-label>
+            <ion-text slot="end">
+                {{formatedDate}}
+            </ion-text>
+            
+        </ion-item>
+
+        <ion-datetime *ngIf="isCalendarVisible" (ionChange)="updateSelectedDate($event)" presentation="date" size="cover" [value]="currentDate.toISOString()"></ion-datetime>
+ 
+        <ion-button *ngIf="isCalendarVisible" (click)="updateVisibility()">Close Calendar</ion-button>
+
+    </ion-list>
+
+</ion-content>

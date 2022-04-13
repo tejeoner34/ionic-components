@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+        <ion-title>avatar</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-avatar>
+                <img src="../../../assets/stan-lee.jpg" />
+            </ion-avatar>
+        </ion-buttons>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-chip  color="primary" outline="true">
+
+        <ion-avatar class="ion-activatable">
+            <ion-ripple-effect></ion-ripple-effect>
+
+            <img src="/assets/stan-lee.jpg" />
+        </ion-avatar>
+        <ion-label>Default</ion-label>
+    </ion-chip>
+
+    <ion-list>
+        <ion-item *ngFor="let stan of [1,1,1,11,1]">
+            <ion-label>Awesome Label</ion-label>
+            <ion-avatar>
+                <img src="/assets/stan-lee.jpg" />
+            </ion-avatar>
+        </ion-item>
+    </ion-list>
+
+</ion-content>
