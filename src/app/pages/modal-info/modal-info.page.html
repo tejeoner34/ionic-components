@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modalInfo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+    <ion-item>
+        <ion-label>{{name}}</ion-label>
+        <ion-label slot="end">{{country}}</ion-label>
+    </ion-item>
+
+    <ion-button (click)="closeModalNoArguments()" expand="block" fill="clear" shape="round">
+        Close Modal
+    </ion-button>
+
+    <ion-button (click)="closeModalWithArguments()" expand="block" fill="clear" shape="round">
+        Close Modal WIth Props
+    </ion-button>
+
+</ion-content>

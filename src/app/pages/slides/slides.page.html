@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Slider/Swiper</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+
+    <swiper [config]="swiperConfig">
+        <ng-template swiperSlide *ngFor="let slide of slides">
+            <div class="slide-full">
+                <ion-card>
+                    <img [src]="slide.img" class="slide-image">
+                    <ion-card-header>
+                        <ion-card-subtitle>{{slide.titulo}}</ion-card-subtitle>
+                    </ion-card-header>
+                    <ion-card-content>
+                        {{slide.desc}}
+                    </ion-card-content>
+                </ion-card>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="slide-full">
+                <ion-button routerLink="/" expand="block" fill="clear" shape="round">
+                    Back to menu
+                </ion-button>
+            </div>
+        </ng-template>
+    </swiper>
+</ion-content>

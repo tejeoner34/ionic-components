@@ -68,5 +68,40 @@
         "icon": "refresh-circle-outline",
         "name": "Loading",
         "redirectTo": "/loading"
+    },
+    {
+        "icon": "phone-portrait-outline",
+        "name": "Modal",
+        "redirectTo": "/modal"
+    },
+    {
+        "icon": "tablet-portrait-outline",
+        "name": "PopOver",
+        "redirectTo": "/pop-over"
+    },
+    {
+        "icon": "code-working-outline",
+        "name": "Progress Bar",
+        "redirectTo": "/progress-bar"
+    },
+    {
+        "icon": "arrow-down-circle-outline",
+        "name": "Refresher",
+        "redirectTo": "/refresher"
+    },
+    {
+        "icon": "search-outline",
+        "name": "Search Bar",
+        "redirectTo": "/search-bar"
+    },
+    {
+        "icon": "search-outline",
+        "name": "Segments",
+        "redirectTo": "/segments"
+    },
+    {
+        "icon": "albums-outline",
+        "name": "Slides",
+        "redirectTo": "/slides"
     }
   ]

@@ -1,0 +1,5 @@
+<ion-list>
+    <ion-item (click)="handlePopoverClose( i + 1)" *ngFor="let item of data; let i = index">
+        <ion-label>Item {{i + 1}}</ion-label>
+    </ion-item>
+</ion-list>

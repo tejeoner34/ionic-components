@@ -1,0 +1,64 @@
+.swiper{
+    height: 100%;
+}
+
+.slide-container1{
+    height: 100%;
+    background-color: rgb(79, 148, 99) ;
+}
+
+.slide-container2{
+    height: 100%;
+    background-color: rgb(92, 25, 168);
+}
+
+.slide-container3{
+    height: 100%;
+    background-color: rgb(117, 83, 45);
+}
+
+
+.slide-full {
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-card {
+    overflow: unset !important;
+}
+
+ion-card {
+    height: 200px;
+    width: 300px;
+}
+
+.slide-image {
+    width: 100px;
+    text-align: center;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+    top: -50px;
+}
+
+ion-card-header {
+    position: relative;
+    top: -50px;
+}
+
+ion-card-content {
+    position: relative;
+    top: -50px;
+}
+
+.avatar {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

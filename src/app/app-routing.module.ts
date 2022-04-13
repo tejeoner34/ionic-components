@@ -69,6 +69,38 @@ const routes: Routes = [
     path: 'loading',
     loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
   },
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
+  {
+    path: 'pop-over',
+    loadChildren: () => import('./pages/pop-over/pop-over.module').then( m => m.PopOverPageModule)
+  },
+  {
+    path: 'progress-bar',
+    loadChildren: () => import('./pages/progress-bar/progress-bar.module').then( m => m.ProgressBarPageModule)
+  },
+  {
+    path: 'refresher',
+    loadChildren: () => import('./pages/refresher/refresher.module').then( m => m.RefresherPageModule)
+  },
+  {
+    path: 'search-bar',
+    loadChildren: () => import('./pages/search-bar/search-bar.module').then( m => m.SearchBarPageModule)
+  },
+  {
+    path: 'segments',
+    loadChildren: () => import('./pages/segments/segments.module').then( m => m.SegmentsPageModule)
+  },
+  {
+    path: 'slides',
+    loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
+  },
+//   {
+//     path: 'modal-info',
+//     loadChildren: () => import('./pages/modal-info/modal-info.module').then( m => m.ModalInfoPageModule)
+//   },
   
 ];
 
